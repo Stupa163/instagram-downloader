@@ -1,0 +1,26 @@
+{
+  "name": "Instagram images downloader",
+  "version": "1.0.0",
+  "permissions": [
+    "downloads",
+    "webRequest",
+    "*://*.instagram.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "build/background.js"
+    ]
+  },
+  "content_scripts": [{
+    "matches": [
+      "https://www.instagram.com/*",
+      "http://www.instagram.com/*"
+    ],
+    "js": [
+      "build/app.js"
+    ],
+    "run_at": "document_end"
+  }],
+  "description": "Download instagram images thanks to this extension",
+  "manifest_version": 2
+}
