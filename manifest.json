@@ -1,6 +1,13 @@
 {
   "name": "Instagram images downloader",
   "version": "1.0.0",
+  "icons": {
+    "16": "medias/16.png",
+    "32": "medias/32.png",
+    "48": "medias/48.png",
+    "64": "medias/64.png",
+    "128": "medias/128.png"
+  },
   "permissions": [
     "downloads",
     "webRequest",
