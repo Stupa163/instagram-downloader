@@ -84,7 +84,7 @@ const listenForMessages = (message: ChromeMessage): void => {
     }
 }
 
-const updateEdges = (newEdges: Array<any>): void => {
+const updateEdges = (newEdges: Array<EdgeInterface>): void => {
     edges = edges.concat(newEdges)
 }
 
